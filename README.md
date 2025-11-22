@@ -1,0 +1,1 @@
+# manjotjosan2-pixelwatch-wearos-app
