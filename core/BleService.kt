@@ -28,5 +28,8 @@ class BleService(context: Context) {
             // Discover services/characteristics
         }
     }
+    fun initiatePairing(pin: String) {
+    // Implement PIN entry, key exchange, and AES session logic
+}
     // Add more protocol/channel logic as needed...
 }
