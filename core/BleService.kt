@@ -34,5 +34,23 @@ class BleService(context: Context) {
     fun sendEncryptedMessage(msg: ByteArray) {
     // AES-GCM encryption, send via BLE channel
 }
+class BleService(context: Context) {
+    // ... existing code ...
+    var pairingPIN: String? = null
+    var sessionKey: ByteArray? = null
+
+    fun showPairingPINDialog() {
+        // TODO: Show PIN entry on watch, store in pairingPIN
+    }
+
+    fun performKeyExchange() {
+        // TODO: Implement ECDH key exchange with phone
+        // sessionKey = negotiated secret
+    }
+
+    fun startEncryptedSession() {
+        // TODO: Secure BLE comms, use sessionKey for encryption
+    }
+}
     // Add more protocol/channel logic as needed...
 }
