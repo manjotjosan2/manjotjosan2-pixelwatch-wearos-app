@@ -31,5 +31,8 @@ class BleService(context: Context) {
     fun initiatePairing(pin: String) {
     // Implement PIN entry, key exchange, and AES session logic
 }
+    fun sendEncryptedMessage(msg: ByteArray) {
+    // AES-GCM encryption, send via BLE channel
+}
     // Add more protocol/channel logic as needed...
 }
